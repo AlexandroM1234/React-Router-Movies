@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 
 const Movie = props => {
   const [movie, setMovie] = useState();
-  const { id } = useParams();
+  let { id } = useParams();
 
   useEffect(() => {
     // change ^^^ that line and grab the id from the URL
